@@ -10,14 +10,28 @@
   
   <!-- AOS (Animate On Scroll) -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
+
+  <style>
+    /* Animação do gradiente do banner */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animated-gradient {
+      background: linear-gradient(-45deg, #000000, #0f3d2e, #065f46, #1f2937);
+      background-size: 300% 300%;
+      animation: gradientShift 10s ease infinite;
+    }
+  </style>
+
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" />
 </head>
 
 <body class="bg-black text-white font-sans">
 
   <!-- HERO -->
-  <section class="relative flex flex-col md:flex-row items-center justify-center p-6 md:p-12 bg-gradient-to-r from-black via-gray-900 to-emerald-900">
+  <section class="relative flex flex-col md:flex-row items-center justify-center p-6 md:p-12 animated-gradient">
     <div class="max-w-xl text-center md:text-left" data-aos="fade-right">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Vença Suas Desculpas Hoje!</h1>
       <p class="text-lg mb-6 text-gray-300">Mais energia, foco e força com a linha <span class="text-emerald-400 font-semibold">Secaps Black</span>.</p>
@@ -105,4 +119,3 @@
 
 </body>
 </html>
-  
