@@ -75,15 +75,32 @@
       </div>
     </div>
   </section>
-  
-<!-- =========================
+
+  <!-- =========================
 SEÇÃO: ANTES E DEPOIS
 ========================= -->
 <section id="antes-depois" class="py-16 bg-gradient-to-b from-black via-gray-900 to-emerald-950 text-center text-white">
+  <style>
+    /* Animação dourada no título */
+    @keyframes goldShine {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .gold-gradient {
+      background: linear-gradient(90deg, #f9d976, #f39f00, #f9d976);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: goldShine 4s infinite alternate;
+      font-weight: 800;
+    }
+  </style>
+
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-extrabold mb-8 text-emerald-400">
-      Resultados Reais com <span class="text-yellow-400">SECAPS BLACKS</span>
+    <h2 class="text-4xl font-extrabold mb-8">
+      <span class="gold-gradient">Resultados Reais com SECAPS BLACKS</span>
     </h2>
+
     <p class="mb-10 text-lg text-gray-300">
       Inspire-se com histórias reais de quem já conquistou mais energia, foco e resultados visíveis com o poder natural do SECAPS BLACKS.
     </p>
